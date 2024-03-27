@@ -1,8 +1,7 @@
-// Function to add a row
 function addRow(tableId) {
     var table = document.getElementById(tableId);
+    var addMoreRow = table.rows[table.rows.length - 1]; // "Add more rows" row
     var rowCount = table.rows.length;
-    var row = table.insertRow(rowCount - 1); // Insert before the last "Add more rows" row
 
     // Get the column types from the first row
     var colTypes = [];
@@ -11,6 +10,9 @@ function addRow(tableId) {
         var inputType = getInputType(firstRow.cells[i]);
         colTypes.push(inputType);
     }
+
+    // Add a new row before the "Add more rows" row
+    var row = table.insertRow(rowCount - 1); // Insert before the last "Add more rows" row
 
     // Add cells with input fields based on column types
     for (var j = 0; j < colTypes.length; j++) {
@@ -25,10 +27,13 @@ function addRow(tableId) {
     removeButton.innerHTML = "-";
     removeButton.className = "form_btns";
     removeButton.onclick = function () {
-        removeRow(this);
+        removeRow(this, tableId);
     };
     removeCell.innerHTML = ''; // Clear existing content
     removeCell.appendChild(removeButton);
+
+    // Move the "Add more rows" row to the end
+    table.appendChild(addMoreRow);
 
     // Save the table HTML to local storage
     saveTableToLocalStorage(tableId);
@@ -76,7 +81,6 @@ function createInput(type) {
     input.className = "form_lable"; // Apply your class here
     return input;
 }
-
 
 // Helper function to save table HTML to local storage
 function saveTableToLocalStorage(tableId) {

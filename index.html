@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <table align="center" width="70%" cellspacing="10">
+        <tr>
+            <td width="10%">
+                <img src="images/logo.png" alt="">
+            </td>
+            <td width="8%">
+                <p class="text">Government of Canada</p>
+            </td>
+            <td width="10%">
+                <p class="text">Gouvernement du Canada</p>
+            </td>
+            <td align="right">
+                <p>PROTECTED WHEN COMPLETED - <b>B</b></p>
+                <P>PAGE 1 OF 2</P>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <h2>SCHEDULE 1</h2>
+                <h2>APPLICATION FOR TEMPORARY RESIDENCE</h2>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <b>The principal applicant, his or her spouse or common-law partner, if applicable, and all dependent
+                    children aged 18 years or older listed in the application for temporary residence must complete
+                    their own copy of this form.</b>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="border-t-b">
+                    <table width="100%">
+                        <tr>
+                            <td width="33.33%" align="center"></td>
+                            <td width="33.33%" align="center">
+                                <button class="form_btn">Validate</button>
+                            </td>
+                            <td width="33.33%" align="right">
+                                <button class="form_btn">Clear Form</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="applicant">
+                    <b>*Indicate whether you are <i class="fa-solid fa-caret-right fa-lg"></i></b>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">*The principal applicant</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                        <label for="">*The spouse, common-law partner or dependent child aged 18 years or older of the
+                            principal applicant</label>
+                    </div>
+                    <div>
+                        <div class="border">
+                            <span>OFFICE USE ONLY</span>
+                            <p>Validated</p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="full_name">
+                    <div class="name">
+                        <span>1</span>
+                        <b>Full name</b>
+                    </div>
+                    <div class="family">
+                        <div class="family_name border_right">
+                            <label for="">*Family name (as shown on your passport or travel document)</label>
+                            <input type="text">
+                        </div>
+                        <div class="family_name">
+                            <label for="">Given name(s) (as shown on your passport or travel document)</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="borders flex">
+                    <div class="dob border_right">
+                        <span>2</span>
+                        <div class="date">
+                            <b>*Date of Birth <i class="fa-solid fa-caret-right fa-lg"></i></b>
+                            <div>
+                                <input type="date" class="date_input" name="" id="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dob">
+                        <span>3</span>
+                        <b>UCI</b> <br>
+                        <input type="text" class="uci">
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="borders padding">
+                    <b>Canada places a high value on bringing those who commit acts of genocide, war crimes or crimes
+                        against humanity to justice. Canada was the first country to incorporate the obligations of the
+                        Rome Statute into its national laws.</b>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="borders">
+                    <div class="flex">
+                        <div class="service">
+                            <span>4</span>
+                        </div>
+                        <div class="services">
+                            <b>Military Service</b>
+                            <p>Did you serve in any military, militia, or civil defence unit or serve in a security
+                                organization or police force (including non obligatory national service, reserve or
+                                volunteer units)?</p>
+                            <div class="service_form flex">
+                                <div>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">*NO</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">*Yes</label>
+                                </div>
+                                <div><i class="fa-solid fa-caret-right fa-lg"></i></div>
+                                <div>Give the following details:</div>
+                            </div>
+                        </div>
+                    </div>
+                    <table width="100%" border="" id="travelTable1" cellspacing="0">
+                        <tr class="heading">
+                            <td>From</td>
+                            <td>To</td>
+                            <td>Location/Place where stationed</td>
+                            <td>Province</td>
+                            <td>Country or Territory</td>
+                            <td width="3%"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td>
+                                <select name="" id="" class="form_lable">
+                                    <option value="">India</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="button" class="form_btns"
+                                    onclick="removeRow(this, 'travelTable1')">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td>
+                                <select name="" id="" class="form_lable">
+                                    <option value="">India</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="button" class="form_btns"
+                                    onclick="removeRow(this, 'travelTable1')">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td>
+                                <select name="" id="" class="form_lable">
+                                    <option value="">India</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="button" class="form_btns"
+                                    onclick="removeRow(this, 'travelTable1')">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" align="right" class="more">Add more rows
+                                <button class="form_btns1" id="addRow1" onclick="addRow('travelTable1')">+</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="borders">
+                    <div class="flex">
+                        <div class="service">
+                            <span>5</span>
+                        </div>
+                        <div class="services">
+                            <p>Have you ever witnessed or participated in the ill treatment of prisoners or civilians,
+                                looting or desecration of religious buildings?</p>
+                            <div class="service_form flex">
+                                <div>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">*NO</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">*Yes</label>
+                                </div>
+
+                                <div><i class="fa-solid fa-caret-right fa-lg"></i></div>
+                                <div>Give the following details:</div>
+                            </div>
+                        </div>
+                    </div>
+                    <table width="100%" border="" id="travelTable2" cellspacing="0">
+                        <tr class="heading">
+                            <td>From</td>
+                            <td>To</td>
+                            <td>Location</td>
+                            <td>Province</td>
+                            <td>Country or Territory</td>
+                            <td width="3%"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td>
+                                <select name="" id="" class="form_lable">
+                                    <option value="">India</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="button" class="form_btns"
+                                    onclick="removeRow(this, 'travelTable2')">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td>
+                                <select name="" id="" class="form_lable">
+                                    <option value="">India</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="button" class="form_btns"
+                                    onclick="removeRow(this, 'travelTable2')">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td>
+                                <select name="" id="" class="form_lable">
+                                    <option value="">India</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="button" class="form_btns"
+                                    onclick="removeRow(this, 'travelTable2')">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" align="right" class="more">Add more rows
+                                <button class="form_btns1" id="addRow2" onclick="addRow('travelTable2')">+</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="space">
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>IMM 5257 (09-2023)</p>
+                                    <span>Schedule 1</span>
+                                </div>
+                            </td>
+                            <td align="center">
+                                <b>This form is made avallable by Immigration, Refugees and Citizenship Canada and Is
+                                    not to be sold to applicants.</b>
+                                <p>(AUSSI DISPONIBLE EN FRANÇAIS - IMM 5257 F - Annexe 1)</p>
+                            </td>
+                            <td align="right">
+                                <img src="images/canada1.png" width="150px" alt="">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td width="10%">
+                <img src="images/logo.png" alt="">
+            </td>
+            <td width="8%">
+                <p class="text">Government of Canada</p>
+            </td>
+            <td width="10%">
+                <p class="text">Gouvernement du Canada</p>
+            </td>
+            <td align="right">
+                <p>PROTECTED WHEN COMPLETED - <b>B</b></p>
+                <P>PAGE 2 OF 3</P>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="borders">
+                    <div class="flex">
+                        <div class="service">
+                            <span>6</span>
+                        </div>
+                        <div class="services">
+                            <b>Membership or Association with Organizations</b>
+                            <p>Are you, or have you ever been a member or associated with any political party, or other
+                                group or organization which has engaged in or advocated violence as a means to achieving
+                                a political or religious objective, or which has been associated with criminal activity
+                                at any time? Do not use abbreviations.</p>
+                            <div class="service_form flex">
+                                <div>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">*NO</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">*Yes</label>
+                                </div>
+                                <div><i class="fa-solid fa-caret-right fa-lg"></i></div>
+                                <div>Give the following details:</div>
+                            </div>
+                        </div>
+                    </div>
+                    <table width="100%" border="" id="travelTable3" cellspacing="0">
+                        <tr class="heading">
+                            <td>From</td>
+                            <td>To</td>
+                            <td>Name of organization</td>
+                            <td>Activities and/or positions held within organization</td>
+                            <td>Province</td>
+                            <td>Country or Territory</td>
+                            <td width="3%"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td>
+                                <select name="" id="" class="form_lable">
+                                    <option value="">India</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="button" class="form_btns"
+                                    onclick="removeRow(this, 'travelTable3')">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td>
+                                <select name="" id="" class="form_lable">
+                                    <option value="">India</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="button" class="form_btns"
+                                    onclick="removeRow(this, 'travelTable3')">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td>
+                                <select name="" id="" class="form_lable">
+                                    <option value="">India</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="button" class="form_btns"
+                                    onclick="removeRow(this, 'travelTable3')">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7" align="right" class="more">Add more rows
+                                <button class="form_btns1" id="addRow3" onclick="addRow('travelTable3')">+</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="borders">
+                    <div class="flex">
+                        <div class="service">
+                            <span>7</span>
+                        </div>
+                        <div class="services">
+                            <b>Government Positions</b>
+                            <p>Have you ever held any goverment positions (such as civil servant, judge, police officer,
+                                mayor, member of parliament, hospital administrator)? Do not use abbreviations.</p>
+                            <div class="service_form flex">
+                                <div>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">*NO</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">*Yes</label>
+                                </div>
+                                <div><i class="fa-solid fa-caret-right fa-lg"></i></div>
+                                <div>Give the following details:</div>
+                            </div>
+                        </div>
+                    </div>
+                    <table width="100%" border="" id="travelTable4" cellspacing="0">
+                        <tr class="heading">
+                            <td>From</td>
+                            <td>To</td>
+                            <td>Country or Territory</td>
+                            <td>Level of jurisdiction (e.g. national, regional, municipal)</td>
+                            <td>Department/Branch</td>
+                            <td>Activities and/or position held</td>
+                            <td width="3%"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td>
+                                <select name="" id="" class="form_lable">
+                                    <option value="">India</option>
+                                </select>
+                            </td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td>
+                                <button type="button" class="form_btns"
+                                    onclick="removeRow(this, 'travelTable4')">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td>
+                                <select name="" id="" class="form_lable">
+                                    <option value="">India</option>
+                                </select>
+                            </td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td>
+                                <button type="button" class="form_btns"
+                                    onclick="removeRow(this, 'travelTable4')">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td>
+                                <select name="" id="" class="form_lable">
+                                    <option value="">India</option>
+                                </select>
+                            </td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td>
+                                <button type="button" class="form_btns"
+                                    onclick="removeRow(this, 'travelTable4')">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7" align="right" class="more">Add more rows
+                                <button class="form_btns1" id="addRow4" onclick="addRow('travelTable4')">+</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="borders">
+                    <div class="flex">
+                        <div class="service">
+                            <span>8</span>
+                        </div>
+                        <div class="services">
+                            <b>Previous Travel</b>
+                            <p>Since the age of 18 or during the past five years, whichever is more recent, have you
+                                travelled to any country or territory other than the country of your citizenship or your
+                                current country or territory of residence?</p>
+                            <div class="service_form flex">
+                                <div>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">*NO</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">*Yes</label>
+                                </div>
+                                <div><i class="fa-solid fa-caret-right fa-lg"></i></div>
+                                <div>Give the following details:</div>
+                            </div>
+                        </div>
+                    </div>
+                    <table width="100%" border="" id="travelTable5" cellspacing="0">
+                        <tr class="heading">
+                            <td>From</td>
+                            <td>To</td>
+                            <td>Country or Territory</td>
+                            <td>Location</td>
+                            <td>Purpose of Travel</td>
+                            <td width="3%"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td>
+                                <select name="" id="" class="form_lable">
+                                    <option value="">India</option>
+                                </select>
+                            </td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td>
+                                <button type="button" class="form_btns"
+                                    onclick="removeRow(this, 'travelTable5')">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td>
+                                <select name="" id="" class="form_lable">
+                                    <option value="">India</option>
+                                </select>
+                            </td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td>
+                                <button type="button" class="form_btns"
+                                    onclick="removeRow(this, 'travelTable5')">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td><input type="month" name="" id="" class="form_lable"></td>
+                            <td>
+                                <select name="" id="" class="form_lable">
+                                    <option value="">India</option>
+                                </select>
+                            </td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td><input type="text" class="form_lable"></td>
+                            <td>
+                                <button type="button" class="form_btns"
+                                    onclick="removeRow(this, 'travelTable5')">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" align="right" class="more">Add more rows
+                                <button class="form_btns1" id="addRow5" onclick="addRow('travelTable5')">+</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <b>PRIVACY NOTICE</b>
+                <div class="borders">
+                    <p>Personal information provided on this form is collected and will be used, disclosed, and retained
+                        by Immigration, Refugees and Citizenship Canada (IRCC) under the authority of the Immigration
+                        and Refugee Protection Act (IRPA). The personal information provided will be used for the
+                        purpose of processing applications. The personal information provided may be disclosed to other
+                        federal government institutions and third parties including law
+                        enforcement bodies, provincial/territonal govemments and/or foreign governments for the purpose
+                        of validating identity, eligibility and admissibility.</p>
+                    <p>The personal information collected on an application, and other information collected in support
+                        of an application, may be used for advanced analytics, automation, and other technologies to
+                        support processing of applications and decision making, including your application. Personal
+                        information, including from advanced analytics, automation, and other technologies, may also be
+                        used for purposes including research, statistics, program and policy evaluation, internal audit,
+                        compliance, risk management, strategy development and reporting.</p>
+                    <p>Where biometrics are provided in support of an application, the fingerprints collected will be
+                        stored and shared with the RCMP. The fingerprint record may also be disclosed to law enforcement
+                        agencies in Canada in accordance with subsection 13.11(1) of the Immigration and Refugee
+                        Protection Regulations. The information may be used to establish or verify the identity of a
+                        person in orderto prevent, investigate, or prosecute an offence under any law of Canada or a
+                        Province. This information may also be used to establish or verify the identity of an individual
+                        whose identity cannot reasonably be otherwise established or verified because of physical or
+                        mental condition. Canada may also share immigration information related to biometric records
+                        with foreign governments with whom Canada has an agreement or arrangement.</p>
+                    <p>Failure to complete the form in full may result in a delay or the application not being
+                        processed. The Privacy Act gives individuals the right of access to, protection, and correction
+                        of their personal information. Further details are available in Info Source. If you are not
+                        satisfied with the manner in which IRCC handles your personal information, you may exercise your
+                        right to file a complaint to the Office of the Privacy Commissioner of Canada. The collection,
+                        use, disclosure and retention of your personal information is further described in IRCC's
+                        personal information bank - IRCC PPU 068.</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="space">
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>IMM 5257 (09-2023)</p>
+                                    <span>Schedule 1</span>
+                                </div>
+                            </td>
+                            <td align="center">
+                                <b>This form is made avallable by Immigration, Refugees and Citizenship Canada and Is
+                                    not to be sold to applicants.</b>
+                                <p>(AUSSI DISPONIBLE EN FRANÇAIS - IMM 5257 F - Annexe 1)</p>
+                            </td>
+                            <td align="right">
+                                <img src="images/canada1.png" width="150px" alt="">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td width="10%">
+                <img src="images/logo.png" alt="">
+            </td>
+            <td width="8%">
+                <p class="text">Government of Canada</p>
+            </td>
+            <td width="10%">
+                <p class="text">Gouvernement du Canada</p>
+            </td>
+            <td align="right">
+                <p>PROTECTED WHEN COMPLETED - <b>B</b></p>
+                <P>PAGE 3 OF 3</P>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="border-t-b">
+                    <table width="100%">
+                        <tr>
+                            <td width="33.33%" align="center">
+                                <button class="form_btn">Validate</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

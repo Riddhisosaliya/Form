@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.form_btn {
+    border: 1px solid #000;
+    background-color: rgb(9, 94, 141);
+    color: #fff;
+    padding: 0px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.border {
+    border: 2px solid #000;
+    text-align: center;
+}
+
+.border span {
+    background-color: #000;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+}
+
+.border_top {
+    border-top: 2px solid #000;
+}
+
+.applicant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.name {
+    border-bottom: 1px solid #000;
+}
+
+.name span {
+    border-right: 1px solid #000;
+    padding: 0 5px;
+}
+
+.full_name {
+    border: 1px solid #000;
+}
+
+.family_name {
+    width: 50%;
+    padding: 5px 10px;
+}
+
+.family_name label {
+    display: block;
+}
+
+.family_name input {
+    width: 100%;
+    padding: 15px 0;
+    border: 0;
+    outline: none;
+    font-family: monospace;
+}
+
+.family {
+    display: flex;
+    align-items: center;
+}
+
+.border_right {
+    border-right: 1px solid #000;
+}
+
+.borders {
+    border: 1px solid #000;
+}
+
+.dob {
+    width: 50%;
+}
+
+.dob span,
+.service span {
+    border: 1px solid #000;
+    border-width: 0 1px 1px 0;
+    padding: 0 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+.uci {
+    border: 0;
+    padding: 15px 0;
+    outline: none;
+    margin: 5px;
+}
+
+.padding {
+    padding: 3px;
+}
+
+.border-t-b {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.more {
+    padding: 10px;
+}
+
+.services {
+    padding: 0 5px;
+}
+
+.services p {
+    padding-bottom: 20px;
+}
+
+.service_form {
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.form_lable {
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 10px;
+}
+
+.heading td {
+    padding: 5px;
+}
+
+.form_btns {
+    border: 2px solid gray;
+    background-color: rgb(197, 193, 193);
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+}
+
+.borders p {
+    padding: 10px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.date>* {
+    width: 50%;
+    text-align: center;
+}
+
+.date_input {
+    width: 100%;
+    padding: 10px;
+}
+
+.form_btns1 {
+    border: 2px solid gray;
+    background-color: rgb(197, 193, 193);
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.space {
+    padding: 20px 0;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 600;
+}
